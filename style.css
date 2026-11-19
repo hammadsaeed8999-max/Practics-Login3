@@ -1,0 +1,452 @@
+/* @import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Isometra&family=Lora:ital,wght@0,654;1,654&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+:root{
+     --primary-color: #2563EB;
+    --secondary-color: #1D4ED8;
+    --background-color: #F8FAFC;
+    --card-color: #FFFFFF;
+    --text-color: #1E293B;
+    --muted-color: #64748B;
+    --border-color: #DCE4F0;
+    --hover-color: #1E40AF;
+    --hight-light: red;
+}
+
+body{
+    background-color: var(--secondary-color);
+}
+
+.main{
+    text-align: center;
+    margin-top: 50px;
+    line-height: 40px;
+}
+
+.heading>h1{
+    font-size: 60px;
+}
+
+.heading>p{
+       text-align: justify;
+       text-align: center;
+       font-size: 20px;
+       color: var(--hight-light);
+       font-weight: bold;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Design Inpuit Field and Label */
+.child>label{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.child>input{
+    width: 400px;
+    height: 30px;
+    margin-top: 40px;
+    line-height: 50px;
+}
+
+.child>input:hover{
+          border: 2px solid orange;
+}
+
+.button>button{
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.button>button>a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+input::placeholder{
+    padding-left: 40px;
+}
+
+#Phone{
+    margin-right: 40px;
+}
+
+#Email{
+    margin-left: 20px;
+}
+
+#Email::placeholder{
+      padding-left: 50px;
+}
+
+.child>i{
+    position: absolute;
+    left: 500px;
+   margin-top: 50px;
+   right:20px;
+    color: wheat;
+}
+
+.button>i{
+    position: absolute;
+    right: 700px;
+    top: 530px;
+}
+
+
+/* Login Form Design */
+.main2{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.side-1{
+    border: 2px solid black;
+}
+
+.image{
+    border: 2px solid black;
+}
+
+.button2>button{
+    width: 200px;
+    height: 50px;
+     margin-top: 20px;
+    margin-left: 160px;
+}
+
+.button2>button>a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.heading2>h1{
+    font-size: 60px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.heading2>p{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+.image>img{
+    width: 650px;
+    height: 420px;
+}
+
+
+/* ============================= */
+/* Tablet Responsive Design */
+/* ============================= */
+
+@media screen and (max-width: 768px) {
+
+    .main2 {
+        grid-template-columns: 1fr;
+        width: 95%;
+        margin: 40px auto;
+        gap: 20px;
+    }
+
+    .side-1,
+    .image {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .image > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .heading2 > h1 {
+        font-size: 40px;
+    }
+
+    .child > input {
+        max-width: 90%;
+        box-sizing: border-box;
+    }
+
+    .button2 > button {
+        margin-left: 0;
+    }
+}
+
+
+/* ============================= */
+/* Mobile Responsive Design */
+/* ============================= */
+
+@media screen and (max-width: 480px) {
+
+    .main {
+        margin-top: 25px;
+        line-height: 30px;
+    }
+
+    .heading > h1 {
+        font-size: 35px;
+    }
+
+    .heading > p {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .main2 {
+        width: 95%;
+        margin: 30px auto;
+        grid-template-columns: 1fr;
+    }
+
+    .heading2 > h1 {
+        font-size: 30px;
+        margin: 25px 0;
+    }
+
+    .heading2 > p {
+        margin: 10px 0;
+    }
+
+    .child > label {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .child > input {
+        width: 90%;
+        height: 40px;
+        margin: 20px 0;
+        line-height: normal;
+    }
+
+    input::placeholder {
+        padding-left: 10px;
+    }
+
+    #Email::placeholder {
+        padding-left: 10px;
+    }
+
+    #Phone {
+        margin-right: 0;
+    }
+
+    #Email {
+        margin-left: 0;
+    }
+
+    .button > button {
+        width: 80%;
+    }
+
+    .button2 > button {
+        width: 80%;
+        height: 45px;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .image > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .child > i {
+        left: 15px;
+        right: auto;
+        margin-top: 30px;
+    }
+
+    .button > i {
+        position: static;
+        margin-left: 10px;
+    }
+}
+
+
+/* ============================= */
+/* Small Mobile Responsive */
+/* ============================= */
+
+@media screen and (max-width: 380px) {
+
+    .heading > h1 {
+        font-size: 28px;
+    }
+
+    .heading2 > h1 {
+        font-size: 26px;
+    }
+
+    .child > input {
+        width: 95%;
+        font-size: 14px;
+    }
+
+    .child > label {
+        font-size: 15px;
+    }
+
+    .button > button,
+    .button2 > button {
+        width: 90%;
+    }
+
+    .image > img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Sub Page Style Start */
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: #4e73ec;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 130px;
+
+}
+
+.links>ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+.links>ul>li>a{
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.logo>img{
+    height: 100px;
+
+}
+
+@media screen and (max-width:380px) {
+         nav{
+            display: none;
+         }
+}
+
+.sides{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+}
+
+.text{
+       border: 2px solid black;
+       height: 400px;
+}
+
+.text>h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(249, 249, 249);
+    text-align: justify;
+}
+
+.text>p{
+    line-height: 30px;
+    color: wheat;
+}
+
+
+.img{
+       border: 2px solid black;
+}
+
+.img>img{
+    width: 600px;
+    height: 400px;
+}
+
+.About>h1{
+    font-size: 60px;
+}
+
+.About>h1>span{
+    border-bottom: 15px solid red;
+    margin-left: 450px;
+}
+
+.left-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 400px;
+}
+
+.image3{
+    border: 2px solid black;
+}
+
+.image3>img{
+    height: 600px;
+}
+
+.text5{
+    border: 2px solid black;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.text5>h1{
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.text5>h2{
+    color: red;
+    margin-left: 30px;
+}
+
+.text5>p{
+    margin-left: 30px;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+/* Contact Page STYLE */
+.input-main{
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+.input>input{
+    width: 400px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 350px;
+}
+
+h2{
+    font-size: 50px;
+    margin-left: 430px;
+    margin-top: 80px;
+}
+
+.button3{
+     width: 100px;
+     height: 40px;
+     background-color: wheat;
+     margin-left: 250px;
+     margin-top: 20px;
+}
+
+.button3>a{
+     font-size: 20px;
+     text-decoration: none;
+}
